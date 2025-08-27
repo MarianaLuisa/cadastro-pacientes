@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; 
+    color: #333;
+}
+
+header {
+    background-color: #005a9c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-formulario {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.box-formulario h2 {
+    text-align: center;
+    color: #005a9c;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.img-responsiva {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza a imagem */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #005a9c;
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 90, 156, 0.5);
+}
+
+/* botões radio */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.checkbox-container, .botoes-container {
+    margin-top: 20px;
+}
+
+.checkbox-container label {
+    display: inline; /* Para o texto ficar ao lado da caixa */
+    font-weight: normal;
+}
+
+.botoes-container {
+    text-align: center;
+}
+
+button {
+    background-color: #005a9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #003d6e;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #e9e9e9;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #005a9c;
+    text-decoration: none;
+}
+
+/* Efeito para links visitados (pseudo-classe :visited) */
+footer a:visited {
+    color: #551a8b;
+}
+
+.menu-nav {
+    background-color: #004d80; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; 
+}
+
+.menu-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+    color: #b3e0ff; 
+}
+
+.home-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.content-box {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    text-align: center; /* Centraliza o conteúdo da home */
+}
+
+.content-box h2 {
+    color: #005a9c;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.content-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.developer-info {
+    margin-top: 20px;  
+    padding-top: 20px;    
+    border-top: 1px solid #ccc; 
+    font-size: 0.8em;    
+    color: #555;        
+}
+
+.developer-info p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #005a9c;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #003d6e;
+}
+
+@media (max-width: 600px) {
+    .box-formulario {
+        padding: 20px;
+    }
+    .content-box {
+        padding: 20px;
+    }
+
+    .botoes-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

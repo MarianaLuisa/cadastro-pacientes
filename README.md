@@ -1,2 +1,2 @@
-# cadastro-pacientes
+# Cadastro de pacientes
 Desenvolvimento web cadastro pacientes
